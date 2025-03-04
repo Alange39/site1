@@ -1,0 +1,47 @@
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+}
+.agbalumo-regular {
+  font-family: "Agbalumo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+li a:hover{
+color: rgb(160, 160, 167);
+text-decoration: underline;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.alex-brush-regular {
+  font-family: "Alex Brush", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.birthstone-regular {
+  font-family: "Birthstone", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cart{
+  background-image: url("/assets/images/rob.jpg");
+  color: red;
+}
+
+.pinyon-script-regular {
+  font-family: "Pinyon Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}

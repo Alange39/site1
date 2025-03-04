@@ -10,7 +10,7 @@ $categ = $_POST["categ"];
 $img = $_FILES["file"];
 
 //insertion
-$stmt = $conn->prepare("INSERT INTO produits(noms, prix, descrip,) VALUES(:noms, :prix, :descrip)");
+$stmt = $conn->prepare("INSERT INTO produits(categories, prix, descrip,) VALUES(:noms, :prix, :descrip)");
 $stmt->bindparam(":noms", $noms);
 $stmt->bindparam(":prix", $prix);
 $stmt->bindparam(":descrip", $descrip);

@@ -1,197 +1,212 @@
      <?php
 require('config/connexion.php')
  ?>
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
  <html lang="en">
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Cedarville+Cursive&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alex+Brush&family=Cedarville+Cursive&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/sty_prod.css">
+  <link rel="stylesheet" href="assets/css/style.css">
  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets\css\style.css">
-  <title>Main page</title>
+  <title>Page d'accueil</title>
  </head>
- <body class="bg-gray-300 birthstone-regular w-screen w-[19px]">
-<div class=" alex-brush-regular  bg-gray-500 text-center text-white ">  <p class=" ">Triple A Services</p> </div>
+ <body class="birthstone-regular">
 
-    <header  id="head" class="text-xl max-md:text-lg w-[2000px]  flex max-md:flex-col justify-between ">
-    <nav  id="nav" class="bg-gray-200 hover:text-gray-400 w-screen pr-4  flex justify-between ">
-    <p class=" cedarville-cursive-regular   pt-[20px] pl-[50px] ">Watch am</p>
-     <ul class=" text-white flex gap-[30px] max-md:flex-wrap text-black">
-      <li class="pt-[20px] "> <a href="index.php"class="pt-[30px]">Acceuil</a></li>
-      <li class="pt-[20px] "> <a href="produits.php"class="pt-[30px]">Nos produits</a></li>
-      <li class="pt-[20px]"> <a href="./ac_conn.php" class="">My account</a></li>
-      <li class="pt-[20px]"> <a href="./contact.php" class="pr-[20px]">Contact us</a></li>
-      <li class="pt-[20px]"> <a href="./deconnexion.php" class="pr-[20px]">Deconnexion</a></li>
-      <svg class=" max-lg:invisible w-8 h-8 text-gray-800 dark:text-white mt-[20px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <header>
+   <div class="bg-gray-500"><p class="alex-brush-regular text-center text-white ">Triple A Services</p></div>
+
+
+  <section class="text-white text-xl bg-gray-200 max-md:pr-[100px] flex justify-between ">
+    <section>
+      <div> <p class="cedarville-cursive-regular pt-[5px] max-md:text-[17px] text-black">Watch am</p></div>
+ </section>
+    <div>
+      <ul class="flex gap-[30px]   pt-[10px] pr-[20px] max-md:block max-md:text-[15px]">
+
+       <li><a href="./index.php" class="hover:underline hover:text-gray-400">Accueil</a></li> 
+         <li><a href="./produits.php" class="hover:underline hover:text-gray-400">Nos produits</a></li> 
+         <li><a href="./ac_conn.php" class="hover:underline hover:text-gray-400">My account</a></li> 
+         <li><a href="./contact.php" class="hover:underline hover:text-gray-400">Contact Us</a></li> 
+         <li><a href="./deconnexion.php" class="hover:underline hover:text-gray-400">Deconnexion</a></li> 
+               <svg class="w-9 h-9 text-gray-800 dark:text-white mt-[5px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z"/>
-   
 </svg>
+
+
       </ul>
-    </nav>
- </header>
-
-<div class="w-screen "><a href="./cart.php?sms=<?= $sms = "."?>" class="bg-red-600 text-white rounded-full absolute text-center top-[37px] right-[10px] w-[21px]">4</a></div>
-
-    <p id="title" class="alex-brush-regular text-[50px] text-center  text-white  w-screen">Une montre imposante mais elegante, <br>Faites votre choix</p>
-  </div>
-  <section  class="w-screen flex mt-[60px] max-md:block max-md:pb-[50px] bg-white border-y-4 border-yellow-200 h-[690px] items-center w-screen">
-    <div>
-      <img src="assets/images/New.jpg" alt="Message altenatif" class="mix-blend-multiply w-[1000px] ">
-    </div>
-    <div  >
-    <img src="assets/images/Mc.jpg" alt="message alternatif " class="  mix-blend-multiply h-[480px] max-lg:h-[440px]">
-    </div>
-  </section >
-  <div id="sect1"></div>
-
-  <section id="sect2" class= "flex ml-[50px]  max-md:block max-md:m-[5px] birthstone-regular gap-[40px] mt-[90px]">
-    <div class=" max-md:m-[20px]  mt-[50px]"><p class="ml-[130px] text-yellow-400 text-xl">ABOUT US.</p>
-      <p class="text-xl mt-[30px]">Le site <a href="">Watch am</a> est une revolution Camerounaise, qui propose a ses clients <br>
-      d'acheter des montres directement en ligne. Tandis que la plupart des marques <br> d'horlogeres ne jurent que par les points de vente,
-       avec un site vitrine en  <br>renfort,la marque du grand groupe Watchs se distingue en adoptant un nouveau <br> levier de vente, qui a largement fait ses preuves 
-       : le commerce en ligne. </p>
-    </div>
-
-    <div>
-      <img src="assets/images/img3.jpg" alt="image alternative" class="mix-blend-multiply w-[750px] opacity-[90px]">
-    </div>
+    </div> 
   </section>
-  
-  
-  <section class="bg-white w-screen   ">
-    <div><p class="alex-brush-regular text-gray-400 w-[2000px] text-center text-4xl pt-[50px]"> <u>Une gamme variee pour des choix varies</u></p></div>
-    <div class="flex gap-[30px] max-md:block  max-md:border-x-2 border-gray-200 border-b-2">
-      <img src="assets/images/mlh.jpg" alt="" class=" max-md:w-screen max-md:gap-[5px] max-md:m-0 max-md:border-white mix-blend-multiply ml-[30px]">
-      <p class="text-xl mt-[140px] birthstone-regular ml-[40px]">Generalement, la plupart des grands noms du secteur tels que <b>Bucherer a paris,</b>ou encore <b>Horel a Bordeau</b>beneficient d'un site
-      de commerce sur lequel on trouve de belles montres. Mais aujourd'hui, nous vous presentons des boutiques qui offres un large choix de montres, a des prix tres interessants
-      Nos services qui reposent sur des exigences strictes,donnent tout pour vous presenter des montres de qualites aussi physiquement 
-        elegante que fiables a 100%, concus par nos horlogers Suisses et de partout dans le monde, ayant des annees d'experiences et de pratiques.
-        Ceux ci adaptent les models, ainsi que la qualite aux tendances du moment 
-      </p>
-    </div>
-<!--     
-    <div class="mt-[40px] border-t-2 border-gray-100  ml-[400px] w-[700px]">
-    </div> -->
-    <div class="bg-white ">
-      <p class="text-5xl alex-brush-regular text-gray-400 text-center mt-[30px]"><u>Nos Produits</u></p>
-      </div>
-    </div>
-  </section>
+ 
+  </header>
 
+  <!-- premiere section -->
+   <section class="alex-brush-regular h-[200px] bg-gray-300 text-white">
+    <div class="text-6xl text-center max-md:text-[23px] max-md:pr-[90px] max-md:pt-[30px]"><p>Une montre imposante mais elegante, <br> Faites votre choix</p></div>
 
-  <section class="bg-white flex w-screen max-md:flex-wrap pt-[50px] gap-[100px] justify-center border-x-4 border-yellow-200">
-    
-    <div class="border-black "><img src="assets/images/box.jpg" alt="">
-    <button class="bg-black text-white rounded-full w-[40px] opacity-70">1/6</button>
-    <p class="">Montre automatique en acier <br>lumineux pour hommes</p>
-    <p><b>174,510 CFA-176,246 CFA </b>/ piece</p>
-    <p><b>1 piece</b>(MOQ)</p>
-    <div class="flex max-lg:flex-wrap">
-        <button class="bg-gray-500 text-white mt-[30px] hover:border-4 hover:border-gray-300 w-[200px] rounded-[15px] pt-[10px] pb-[10px] pl-[5px] pr-[5px]">Contactez maintenant</button>
-    
-      </div>
+   </section>
+
+   <!-- Seconde section -->
+    <section class="max-md:block bg-white flex border-y-4 border-yellow-200">
+      <img src="./assets/images/New.jpg" alt="" class="w-[1000px] max-md:w-[300px]">
+      <img src="./assets/images/Mc.jpg" alt="" class="pt-[72px] w-[500px]  h-[550px] max-md:w-[280px] max-md:h-[248px]">
+
+    </section>
+
+    <!-- Troisieme section -->
+     <section class="bg-gray-400 max-md:block max-md:w-[px] max-md:pl-[10px]  max-md:flex-wrap max-md:text-[13px] 
+     gap-[60px] text-xl pt-[60px] flex pl-[50px] ">
+      <div class="flex-wrap w-[600px] max-md:w-[240px] max-md:pl-[20px] max-md:text-[15px] max-md:text-white max-md:h-[78px] max-md:flex-wrap">
+        <p class="text-yellow-500 text-center pt-[30px] ">ABOUT US.</p>
+        <p class="pt-[20px] ">Les entreprises <span>Watch am</span> sont une revolution Camerounaise, qui propose a ses clients
+      d'acheter des montres de luxe, directement en ligne via ce site de commerce. Tandis que les autres 
+       marques d'horlogers ne jurent que par les points de vente,avec un site vitrine en renfort, 
+        la marque du grand groupe "Watches" se distingue en adoptant un nouveau levier de vente qui a 
+      largement fait ses preuves: Le commerce en ligne. </p>
       </div>
 
-      
       <div>
-        <img src="assets/images/box2.jpg" alt="">
-    <button class="bg-black text-white rounded-full w-[40px] opacity-70">1/6</button>
-    <p>Montre de luxe etanche en acier <br> pour hommes</p>
-    <p><b>220,0 CFA-276,06 CFA </b>/ piece</p>
-    <p><b>2 pieces</b>(MOQ)</p>
-    <div class="flex">
-        <button class=" bg-black text-white mt-[30px] hover:border-4 hover:border-gray-300 rounded-[15px] w-[200px] pt-[10px] pb-[10px] pl-[7px] pr-[7px]">Contactez maintenant</button>
-     
+        <img src="./assets/images/img3.jpg" alt="" class='w-[750px] max-md:w-[408px] h-[300px] mix-blend-multiply'>
       </div>
 
-      </div>
-          <div>
-        <img src="assets/images/box3.jpg" alt="">
-    <button class="bg-black text-white rounded-full w-[40px] opacity-70">1/6</button>
-    <p>Montre personnalisee de haute<br> qualite Am 100Smart Montre</p>
-    <p><b>420,0 CFA-706,06 CFA </b>/ piece</p>
-    <p><b>1 piece</b>(MOQ)</p>
-    <div class="flex">
-        <button class=" bg-gray-500 text-white mt-[30px] hover:border-4 rounded-[15px] hover:border-gray-300 w-[200px]  pt-[10px] pb-[10px] pl-[7px] pr-[7px]">Contactez maintenant</button>
-   
-      </div>
-      </div>
+     </section>
 
-          <div>
-        <img src="assets/images/box1.jpg" alt="">
-    <button class="bg-black text-white rounded-full w-[40px] opacity-70">1/6</button>
-    <p>Montre de luxe etanche <br>montre chronographe</p>
-    <p><b>100,0 CFA </b>/ piece</p>
-    <p><b>10 piece</b>(MOQ)</p>
-    <div class="flex">
-        <button class="rounded-[15px] hover:border-4 hover:border-gray-300 w-[200px] bg-black text-white mt-[30px]  pt-[10px] pb-[10px] pl-[7px] pr-[7px]">Contactez maintenant</button>
-     
-      </div>
-      </div>
+     <!-- Quatrieme section -->
+     <p class="alex-brush-regular text-gray-400 underline max-md:pl-[20px] text-center pt-[60px] pl-[50px] text-4xl max-md:w-[248px] max-md:flex-wrap">Une gamme variee pour des choix varies</p>
+      <section class=" max-md:px-[20px] max-md:bg-orange-800 max-md:w-[300px]  pl-[50px] pt-[30px] max-md:block  flex gap-[50px] border-b-2 border-gray-400">
+        <div class=" max-md:border-b-2 max-md:border-yellow-300  max-md:px-[20px]">
+          <img src="./assets/images/mlh.jpg" alt="" class="w-[4000px]   mix-blend-multiply max-md:w-[800px]">
+        </div>
+        <div class="pt-[170px] text-xl max-md:text-[15px]  max-md:pt-[30px] ">
+          <p>Generalement, la plupart des grands noms du secteur tel que <span class="font-bold">Bucherer a Paris</span>, ou encore <span class="font-bold">Horel a Bordeau</span>
+        beneficient d'un site de commerce sur lequel on trouve de belles montres. Mais aujourd'hui, nous vous presentons
+      des boutiques qui offrent un large choix de montres, a des prix tres interessants. Nos services qui reposent sur des exigences 
+    strictes, donnent tout pour vous presenter des montres de qualite aussi physiquement elegantes que fiables a 100%, concus par nos horlogers 
+  Suisses et de partout dans le monde, ayant des annees d'experiences et de pratiques. Ceux-ci adaptent des models, ainsi que la qualite aux tendances du moment.</p>
+        </div>
+      </section>
+      <section class="">
+        
+        <div class="border-b-2 border-gray-400 w-[1000px] pt-[30px] ml-[200px] opacity-75"></div>
+          <div class="border-b-2 border-gray-400 w-[400px] pt-[30px] ml-[500px] opacity-50"></div>
+      </section>
+
+      <!-- Cinquieme section -->
+       <p class="alex-brush-regular text-center underline text-4xl pt-[40px] ">Nos Oeuvres</p>
+
+       <section class="text-[19px] flex gap-[50px] flex-wrap items-center pl-[50px] mt-[70px] mb-0 pb-[50px]  border-x-4 border-yellow-200">
+        
+          <div class="w-[300px]">
+            <div><img src="./assets/images/box.jpg" alt=""></div>
+            <div class="w-[180px] flex-wrap">
+              <span class="bg-black text-white text-[17px] opacity-100 rounded-full py-[4px] px-[10px]">1/6</span>
+              <p class="flex-wrap">Montre automatique en acier lumineux pour Hommes</p>
+              <p class="font-bold">174,510FCFA / piece</p>
+              <p class="font-bold">1 piece (MOQ)</p>
+              <button class="bg-black text-white rounded-[17px] mt-[10px] px-[32px] py-[10px] hover:border-4 hover:border-gray-300"><a href="./contact.php" class="hover:text-yellow-200">
+                Contact us</a></button>
+            </div>
+          </div>
+
+
+          <div class="w-[300px]">
+            <div><img src="./assets/images/box2.jpg" alt=""></div>
+            <div class="w-[180px] flex-wrap">
+              <span class="bg-black text-white text-[17px] opacity-100 rounded-full py-[4px] px-[10px]">1/6</span>
+              <p class="flex-wrap">Montre automatique en acier lumineux pour Hommes</p>
+              <p class="font-bold">174,510FCFA / piece</p>
+              <p class="font-bold">1 piece (MOQ)</p>
+              <button class="bg-gray-400 text-white rounded-[17px] mt-[10px] px-[32px] py-[10px] hover:border-4 hover:border-gray-300"><a href="./contact.php" class="hover:text-yellow-200">
+                Contact us</a></button>
+            </div>
+          </div>
+
+
+          <div class="w-[300px]">
+            <div><img src="./assets/images/box3.jpg" alt=""></div>
+            <div class="w-[180px] flex-wrap">
+              <span class="bg-black text-white text-[17px] opacity-100 rounded-full py-[4px] px-[10px]">1/6</span>
+              <p class="flex-wrap">Montre de luxe etanche en acier pour hommes</p>
+              <p class="font-bold">220,0FCFA-276,06CFA / piece</p>
+              <p class="font-bold">2 pieceS (MOQ)</p>
+              <button class="bg-black text-white rounded-[17px] mt-[10px] px-[32px] py-[10px] hover:border-4 hover:border-gray-300"><a href="./contact.php" class="hover:text-yellow-200">
+                Contact us</a></button>
+            </div>
+          </div>
+
+
+          <div class="w-[300px]">
+            <div><img src="./assets/images/box2.jpg" alt=""></div>
+            <div class="w-[180px] flex-wrap">
+              <span class="bg-black text-white text-[17px] opacity-100 rounded-full py-[4px] px-[10px]">1/6</span>
+              <p class="flex-wrap">Montre personnalisee de haute quelite Am 100Smart Montre</p>
+              <p class="font-bold">420,0FCFA / piece</p>
+              <p class="font-bold">1 piece (MOQ)</p>
+              <button class="bg-gray-400 text-white rounded-[17px] mt-[10px] px-[32px] py-[10px] hover:border-4 hover:border-gray-300"><a href="./contact.php" class="hover:text-yellow-200">
+                Contact us</a></button>
+            </div>
+          </div>
+
+
+          <div class="w-[300px]  ml-[100-px]">
+            <div><img src="./assets/images/box4.jpg" alt=""></div>
+            <div class="w-[180px] flex-wrap">
+              <span class="bg-black text-white text-[17px] opacity-100 rounded-full py-[4px] px-[10px]">1/6</span>
+              <p class="flex-wrap">Montre automatique en acier lumineux pour Hommes</p>
+              <p class="font-bold">174,510FCFA / piece</p>
+              <p class="font-bold">1 piece (MOQ)</p>
+              <button class="bg-black text-white rounded-[17px] mt-[10px] px-[32px] py-[10px] hover:border-4 hover:border-gray-300"><a href="./contact.php" class="hover:text-yellow-200">
+                Contact us</a></button>
+            </div>
+          </div>
+
+
+          <div class="w-[300px]">
+            <div><img src="./assets/images/box5.jpg" alt=""></div>
+            <div class="w-[180px] flex-wrap">
+              <span class="bg-black text-white text-[17px] opacity-100 rounded-full py-[4px] px-[10px]">1/6</span>
+              <p class="flex-wrap">Montre automatique en acier lumineux pour Hommes</p>
+              <p class="font-bold">174,510FCFA / piece</p>
+              <p class="font-bold">1 piece (MOQ)</p>
+              <button class="bg-gray-400 text-white rounded-[17px] mt-[10px] px-[32px] py-[10px] hover:border-4 hover:border-gray-300"><a href="./contact.php" class="hover:text-yellow-200">
+                Contact us</a></button>
+            </div>
+          </div>
+
+
+
+          <div class="w-[300px]">
+            <div><img src="./assets/images/box6.jpg" alt=""></div>
+            <div class="w-[180px] flex-wrap">
+              <span class="bg-black text-white text-[17px] opacity-100 rounded-full py-[4px] px-[10px]">1/6</span>
+              <p class="flex-wrap">Montre automatique en acier lumineux pour Hommes</p>
+              <p class="font-bold">174,510FCFA / piece</p>
+              <p class="font-bold">1 piece (MOQ)</p>
+              <button class="bg-black text-white rounded-[17px] mt-[10px] px-[32px] py-[10px] hover:border-4 hover:border-gray-300"><a href="./contact.php" class="hover:text-yellow-200">
+                Contact us</a></button>
+            </div>
+          </div>
        </section>
 
 
-      <section class="bg-white w-screen max-md:flex-wrap max-md:items-center flex pt-[80px]  justify-center gap-[100px] pb-[30px] border-x-4 border-yellow-200">
-      <div>
-      <div>
-        <img src="assets/images/box4.jpg" alt="">
-    <button class="bg-black text-white rounded-full w-[40px] opacity-70">1/6</button>
-    <p>Montre automatique luxueux <br>pour hommes au Design cool</p>
-    <p><b>340,40 CFA-500,0 </b>/ piece</p>
-    <p><b>2 pieces</b>(MOQ)</p>
-    </div>
-    <div class="flex">
-        <button class="rounded-[15px] hover:border-4 hover:border-gray-300 w-[200px] bg-gray-500 text-white mt-[30px]  pt-[10px] pb-[10px] pl-[7px] pr-[7px]">Contactez maintenant</button>
-    
-      </div>
-      </div>
+        <div >
+         
+        </div>
 
-        <div>
-          <div>
-        <img src="assets/images/img1.jpg" alt="" class="h-[270px]">
-    <button class="bg-black text-white rounded-full w-[40px] opacity-70">1/6</button>
-    <p>Montre automatique luxueux <br>pour hommes au Design cool</p>
-    <p><b>340,40 CFA-500,0 </b>/ piece</p>
-    <p><b>2 pieces</b>(MOQ)</p>
-    </div>
-    <div>
-        <button class=" rounded-[15px] bg-black text-white mt-[30px] hover:border-4 hover:border-gray-300 w-[200px]  pt-[10px] pb-[10px] pl-[7px] pr-[7px]">Contactez maintenant</button>
-      
-      </div>
-      </div>
- 
-
-        <div>
-           <div>
-        <img src="assets/images/acier1.jpg" alt="">
-    <button class="bg-black text-white rounded-full w-[40px] opacity-70">1/6</button>
-    <p>Montre automatique luxueux <br>pour hommes au Design cool</p>
-    <p><b>340,40 CFA-500,0 </b>/ piece</p>
-    <p><b>2 pieces</b>(MOQ)</p>
-    </div>
-    <div class="flex">
-        <button class="bg-gray-500 text-white hover:border-4 hover:border-gray-300 w-[200px] mt-[30px]  pt-[10px] pb-[10px] pl-[7px] pr-[7px] rounded-[15px]">Contactez maintenant</button>
-     
-      </div>
-      </div>
- 
- 
-  </section>
-
-
-  <footer class="birthstone-regular pb-[30px]  border-x-4 border-yellow-200 border-b-2 bg-gray-200 pl-[50px] text-xl w-screen">
+         
+       
+       <footer class="birthstone-regular pb-[30px] mt-[0px] max-md:block max-md:flex-wrap border-x-4 border-yellow-200 border-b-2  bg-gray-200 pl-[50px] text-xl">
       <p class="cedarville-cursive-regular text-white text-center pt-[30px] ">Watch am</p>
-    <div class="flex gap-[170px] pt-[40px] max-md:flex-wrap">
-      <div >
+    <div class="flex gap-[170px] pt-[40px]">
+      <div  class="max-md:">
         <b>Menu</b>
         <p>Outils <br> Formation <br>Contact et parrainage <br>Conseiller <br>Newsletter</p>
         <p>Qui sommes nous? <br>Mentions legales <br>Conditions generales d'utilisation</p>
@@ -229,16 +244,15 @@ require('config/connexion.php')
       </div>
     </div>
   </footer>
-
-<section class="flex bg-white justify-between w-screen max-md:flex-col items-center">
- 
+<section class="flex bg-white justify-between">
+  <section class="bg-white flex pl-[200px] gap-[90px] pt-[5px] max-md:block max-md:flex-wrap ">
 
     <div class=" w-[300px]"> Copyright&copy2025 -All rights reserved </div>
     <div><p class="alex-brush-regular w-[150px]">Triple A Services</p>
 
-
+   </section>  
 <section>
-      <div class= " text-black flex gap-[20px] ml-[500px] bg-white items-center">
+      <div class= " text-black flex gap-[20px] ml-[500px] bg-white">
         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
   <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
 </svg>
@@ -263,22 +277,7 @@ require('config/connexion.php')
    </section>
 
     </section>
-    <script>
-      function divise() {
-      const sect1 = document.getElementById('sect1') ;
-      const sect2 = document.getElementById('sect2') ;
-      sect2.style.position= "relative"
-      const res = sect1.getBoundingClientRect() ;
-      sect2.style.top=`${res.buttom}px`
 
-      console.log(`x:${res.top}`)
-      
-      }
-      divise()
-      window.addEventListerner('load',divise) ;
-      window.addEventListerner('scroll',divise) ;
-      window.addEventListerner('resize',divise) ;
 
-    </script>
  </body>
  </html>

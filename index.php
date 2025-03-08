@@ -56,17 +56,17 @@ require('config/connexion.php')
 
    <!-- Seconde section -->
     <section class="max-md:block bg-white flex border-y-4 border-yellow-200">
-      <img src="./assets/images/New.jpg" alt="" class="w-[1000px] max-md:w-[300px]">
-      <img src="./assets/images/Mc.jpg" alt="" class="pt-[72px] w-[500px]  h-[550px] max-md:pb-[20px] max-md:pl-[10px] max-md:w-[300px] max-md:h-[300px]">
+      <img src="./assets/images/New.jpg" alt="" class="w-[1000px] max-md:w-[350px]">
+      <img src="./assets/images/Mc.jpg" alt="" class="pt-[72px] w-[500px]  h-[550px] max-md:pb-[20px] max-md:pl-[10px] max-md:w-[350px] max-md:h-[300px]">
 
     </section>
 
     <!-- Troisieme section -->
      <section class="bg-gray-200 max-md:block max-md:h-[800px] max-md:pl-[10px]  max-md:flex-wrap max-md:text-[13px] 
      gap-[60px] text-xl pt-[80px] flex pl-[50px] h-[550px] ">
-      <div class="flex-wrap w-[600px] max-md:w-[240px] max-md:pl-[20px]  max-md:text-[20px] max-md:text-white max-md:h-[78px] max-md:flex-wrap">
+      <div class="flex-wrap w-[600px] max-md:w-[240px] max-md:pl-[20px]  max-md:text-[26px] max-md:text-white max-md:h-[78px] max-md:flex-wrap">
         <p class="text-yellow-500 text-center pt-[30px] ">ABOUT US.</p>
-        <p class="pt-[20px] max-md:text-black  ">Les entreprises <span>Watch am</span> sont une revolution Camerounaise, qui propose a ses clients
+        <p class="pt-[20px] max-md:text-black alex-brush-regular ">Les entreprises <span>Watch am</span> sont une revolution Camerounaise, qui propose a ses clients
       d'acheter des montres de luxe, directement en ligne via ce site de commerce. Tandis que les autres 
        marques d'horlogers ne jurent que par les points de vente,avec un site vitrine en renfort, 
         la marque du grand groupe "Watches" se distingue en adoptant un nouveau levier de vente qui a 
@@ -81,7 +81,7 @@ require('config/connexion.php')
 
      <!-- Quatrieme section -->
      <p class="alex-brush-regular text-gray-400 underline max-md:pl-[50px] text-center pt-[60px] pl-[50px] text-4xl max-md:w-[248px] max-md:flex-wrap">Une gamme variee pour des choix varies</p>
-      <section class=" max-md:px-[20px] max-md:bg-orange-800 max-md:w-[310px]  pl-[50px] pt-[30px] max-md:block  flex gap-[50px] max-md:border-0 border-b-2 border-gray-400">
+      <section class=" max-md:px-[20px] max-md:bg-orange-800 max-md:w-[360px]  pl-[50px] pt-[30px] max-md:block  flex gap-[50px] max-md:border-0 border-b-2 border-gray-400">
         <div class=" max-md:border-b-2 max-md:border-yellow-300 max-md:px-[50px]">
           <img src="./assets/images/mlh.jpg" alt="" class="w-[4000px]   mix-blend-multiply max-md:w-[800px]">
           <div class="max-md:border-b-2 max-md:border-yellow-300 max-md:border-hidden max-md:opacity-50 mb-[20px] max-md:px-[20px]"></div>

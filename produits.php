@@ -21,10 +21,10 @@
 <div class=" alex-brush-regular  bg-gray-500 text-center text-white">  <p class=" ">Triple A Services</p> </div>
 
 <body class="birthstone-regular">
-   <header class=" h-[70px] max-md:h-[170px] pl-[50px] flex  pt-[10px] bg-gray-300  justify-between">
-    <div> <p class="cedarville-cursive-regular pt-[5px]">Watch am</p></div>
+   <header class=" h-[70px] max-md:h-[170px] pl-[50px] max-md:pl-[20px] flex  pt-[10px] bg-gray-300  justify-between">
+    <div class="max-md:text-[22px]"> <p class="cedarville-cursive-regular pt-[5px]">Watch am</p></div>
     <div class="">
-       <ul class=" flex gap-[50px] text-white text-xl flex max-md:block">
+       <ul class=" flex gap-[50px] text-white text-xl flex max-md:text-[18px] max-md:block">
       <li>
  <a href="./index.php"class="hover:text-gray-400  ">Acceuil</a></li>
       <li><a href="./pprod.php" class="hover:text-gray-400">Nos Produits</a></li>
@@ -40,13 +40,13 @@
   </header>
 <div><span class="bg-red-600 text-white rounded-full absolute text-center top-[34px] right-[47px] w-[21px]">4</span></div>
 
-  <div>
-    <p id="titre" class=" text-[50px] max-md:text-xl text-center  text-gray-400 justify-center pt-[60px]">
+  <div class="max-md:flex-wrap">
+    <p id="titre" class=" text-[50px] max-md:text-[22px] text-center max-md:flex-wrap text-gray-400 justify-center pt-[60px]">
        Venez decouvrir un large et choix de produits divers</p>
   </div>
 
-      <div class="pt-[50px] justify-center gap-[50px] flex">
-  <button class="p-[30px] text-xl text-white bg-yellow-900 rounded-[15px] hover:border-4 hover:border-blue-200 hover:text-gray-500"><a href="./pprod.php">Montres pour Hommes</a></button>
+      <div class="pt-[50px] justify-center gap-[50px] flex max-md:w-[300px] max-md:flex-wrap ">
+  <button class="p-[30px] text-xl text-white  max-md:text-[20px] bg-yellow-900 rounded-[15px] hover:border-4 hover:border-blue-200 hover:text-gray-500"><a href="./pprod.php">Montres pour Hommes</a></button>
     <button class="p-[30px] text-xl text-white bg-yellow-900 rounded-[15px] hover:border-4 hover:border-blue-200 hover:text-gray-500"><a href="./pprod1.php">Montres pour Femmes</a></button>
     <button class="p-[30px] text-xl text-white bg-yellow-900 rounded-[15px] hover:border-4 hover:border-blue-200 hover:text-gray-500"><a href="./pprod2.php">Montres pour couples</a></button>
     <button class="p-[30px] text-xl text-white bg-yellow-900 rounded-[15px] hover:border-4 hover:border-blue-200 hover:text-gray-500"><a href="./pprod3.php">Montres pour personnalisees</a></button>
@@ -55,66 +55,66 @@
 
   <section>
    <div><p class="pt-[110px] pb-[30px] text-center text-blue-900 underline text-4xl">Nos partenaires</p></div>
-   <div>
-      <img src="./assets/images/Watch-Shop.jpg" alt="" class=" w-[2000px]">
-      <img src="./assets/images/Bijourama.jpg" alt="" class=" pt-[70px] w-[2000px]">
-      <div class="flex pt-[70px]">
-         <img src="./assets/images/Chic-Time.jpg" alt="" class="w-[750px]">
-         <img src="./assets/images/piaget.jpg" alt="" class="w-[750px] ">
+   <div class="max-md:items-center">
+      <img src="./assets/images/Watch-Shop.jpg" alt="" class=" w-[2000px]  max-md:w-[350px]  max-md:m-[5px]">
+      <img src="./assets/images/Bijourama.jpg" alt="" class=" pt-[70px] w-[2000px] max-md:w-[350px] ">
+      <div class="flex pt-[70px] max-md:block ">
+         <img src="./assets/images/Chic-Time.jpg" alt="" class="w-[750px] max-md:w-[350px] max-md:hidden">
+         <img src="./assets/images/piaget.jpg" alt="" class="w-[750px]  ">
 
       </div>
    </div>
 </section>
 
-  <footer class="birthstone-regular pb-[30px] mt-[80px]  border-x-4 border-yellow-200 border-b-2 w-[2000px] bg-gray-200 pl-[50px] text-xl">
+  <footer class="birthstone-regular pb-[30px] mt-[80px] max-md:flex-wrap  border-x-4 border-yellow-200 border-b-2 bg-gray-200 pl-[50px] text-xl">
       <p class="cedarville-cursive-regular text-white text-center pt-[30px] ">Watch am</p>
-    <div class="flex gap-[170px] pt-[40px]">
-      <div >
+    <div class="flex gap-[170px] pt-[40px] max-md:flex-wrap">
+      <div class="max-md:hidden">
         <b>Menu</b>
         <p>Outils <br> Formation <br>Contact et parrainage <br>Conseiller <br>Newsletter</p>
         <p>Qui sommes nous? <br>Mentions legales <br>Conditions generales d'utilisation</p>
       </div>
       <div>
         <b>Guides</b> <br>
-      <a href="" >Investir en bourse</a><br>
-      <a href="">Comparatif d'assurances vie</a><br>
-      <a href="">Ouvrir PEA(comparatif)</a><br>
-      <a href="">Comparatif PER</a><br>
-      <a href="">Defiscalisation</a><br>
-      <a href="">Preparer sa retraite</a><br>
-      <a href="">Gestionnaire de patrimoine</a><br>
-      <a href="">Comparatif banques en ligne</a></div>
+      <a href="" class="hover:text-orange-500">Investir en bourse</a><br>
+      <a href="" class="hover:text-orange-500">Comparatif d'assurances vie</a><br>
+      <a href="" class="hover:text-orange-500">Ouvrir PEA(comparatif)</a><br>
+      <a href="" class="hover:text-orange-500">Comparatif PER</a><br>
+      <a href="" class="hover:text-orange-500">Defiscalisation</a><br>
+      <a href="" class="hover:text-orange-500">Preparer sa retraite</a><br>
+      <a href="" class="hover:text-orange-500">Gestionnaire de patrimoine</a><br>
+      <a href="" class="hover:text-orange-500">Comparatif banques en ligne</a></div>
       
       <div>
         <b>Evenements</b><br>
-        <a href="">Anniversaire</a><br>
-        <a href="">Fiancailles</a><br>
-        <a href="">Mariage</a><br>
-        <a href="">Bapteme</a><br>
-        <a href="">Communion</a><br>
-        <a href="">Fete des peres</a><br>
-        <a href="">Fete des meres</a><br>
-        <a href="">Saint valentin</a>
+        <a href="" class="hover:text-orange-500">Anniversaire</a><br>
+        <a href="" class="hover:text-orange-500">Fiancailles</a><br>
+        <a href="" class="hover:text-orange-500">Mariage</a><br>
+        <a href="" class="hover:text-orange-500">Bapteme</a><br>
+        <a href="" class="hover:text-orange-500">Communion</a><br>
+        <a href="" class="hover:text-orange-500">Fete des peres</a><br>
+        <a href="" class="hover:text-orange-500">Fete des meres</a><br>
+        <a href="" class="hover:text-orange-500">Saint valentin</a>
 
       </div>
       <div>
         <b>HORLOGERIES</b><br>
-        <a href="">Nos boutiques</a><br>
-        <a href="">Nous contacter</a><br>
-        <a href="">CGV</a><br>
-        <a href="">Mentions speciales</a><br>
-        <a href="">Confidentialite</a>
+        <a href="" class="hover:text-orange-500">Nos boutiques</a><br>
+        <a href="" class="hover:text-orange-500">Nous contacter</a><br>
+        <a href="" class="hover:text-orange-500">CGV</a><br>
+        <a href="" class="hover:text-orange-500">Mentions speciales</a><br>
+        <a href="" class="hover:text-orange-500">Confidentialite</a>
       </div>
     </div>
   </footer>
-<section class="flex bg-white justify-between">
-  <section class="bg-white flex pl-[200px] gap-[90px] pt-[5px] ">
+<section class="flex bg-white flex max-md: flex-wrap justify-between">
+  <section class="bg-white flex max-md:block max-md:pl-[50px] pl-[200px] gap-[90px] pt-[5px] ">
 
     <div class=" w-[300px]"> Copyright&copy2025 -All rights reserved </div>
     <div><p class="alex-brush-regular w-[150px]">Triple A Services</p>
 
    </section>  
-<section>
+<section class="max-md:hidden">
       <div class= " text-black flex gap-[20px] ml-[500px] bg-white">
         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
   <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>

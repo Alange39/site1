@@ -129,7 +129,7 @@ catch(PDOException $e){
       <input type="number" name="phone" id=""  class="border-b-2 border-black pb-[10px] ml-[50px] max-md:ml-[30px]  w-[310px] max-md:w-[250px] text-lg pt-[30px] birthstone-regular" placeholder="telephone"> 
       <input type="password" name="password" id=""  class=" ml-[50px] max-md:ml-[30px]  border-b-2 border-black pb-[10px] w-[310px] max-md:w-[250px] text-xl pt-[30px]" placeholder="Password">
       <a href=""  class="hover:underline text-center block pt-[20px]">Mot de passe oublie?</a>
-      <input type="submit" name="valid" value="Connexion" class="bg-blue-900 mt-[30px] ml-[50px] max-md:ml-[30px] pt-[15px] pb-[15px] pr-[143px] max-md:pr-[130px] pl-[143px] max-md:pl-[130px] max-md:w-[250px] text-white text-lg"> 
+      <input type="submit" name="valid" value="Connexion" class="bg-blue-900 mt-[30px] ml-[50px]  max-md:ml-[45px]  max-md:pl-[50px]  max-md:pr-[50px] pt-[15px] pb-[15px] pr-[143px] max-md:pr-[130px] pl-[143px] max-md:pl-[130px] max-md:w-[250px] text-white text-lg"> 
       </form>
       <i style=" color:red " class="ml-[80px] mt-[40px]">
         <?php

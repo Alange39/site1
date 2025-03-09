@@ -15,30 +15,40 @@
   <title>Contact shop page</title>
 </head>
 <body class=" birthstone-regular">
-   <div class=" alex-brush-regular  bg-gray-500 text-center text-white">  <p class=" ">Triple A Services</p> </div>
-      <header class=" text-xl  justify-between h-[70px] ">
-    <nav class="   bg-gray-200 flex gap-[700px] ">
-    <p class=" cedarville-cursive-regular pt-[20px] pl-[50px] ">Watch am</p>
-    <nav class=" hover:text-gray-400">
-     <ul class=" text-white flex gap-[30px] text-black">
-      <li class="pt-[20px]"> <a href="index.php"class="pt-[30px]">Acceuil</a></li>
-      <li class="pt-[20px]"><a href="./pprod.php" class="">Nos Produits</a></li>
-      <li class="pt-[20px]"> <a href="./ac_conn.php" class="">My account</a></li>
-      <li class="pt-[20px]"> <a href="./contact.php" class="pr-[20px]">Contact us</a></li>
-        <svg class="w-8 h-8 text-gray-800 dark:text-white mt-[20px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+   
+
+  <header>
+   <div class="bg-gray-500"><p class="alex-brush-regular text-center text-white ">Triple A Services</p></div>
+
+
+  <section class="text-white text-xl bg-gray-200 max-md:pr-[100px] flex justify-between ">
+    <section>
+      <div> <p class="cedarville-cursive-regular ml-[50px] pt-[5px] max-md:text-[22px] max-md:ml-[10px] text-black">Watch am</p></div>
+ </section>
+    <div>
+      <ul class="flex gap-[30px] max-md:pl-[20px]  pt-[10px] pr-[20px] max-md:block max-md:text-[18px]">
+
+       <li><a href="./index.php" class="hover:underline hover:text-gray-400">Accueil</a></li> 
+         <li><a href="./produits.php" class="hover:underline hover:text-gray-400">Nos produits</a></li> 
+         <li><a href="./ac_conn.php" class="hover:underline hover:text-gray-400">My account</a></li> 
+         <li><a href="./contact.php" class="hover:underline hover:text-gray-400">Contact Us</a></li> 
+         <li><a href="./deconnexion.php" class="hover:underline hover:text-gray-400">Deconnexion</a></li> 
+               <svg class="w-9 h-9 text-gray-800 dark:text-white mt-[5px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z"/>
 </svg>
 
-      </ul>
 
-    </nav>
- </header>
+      </ul>
+    </div> 
+  </section>
+ 
+  </header>
  
  <div>
    <p class="text-4xl text-gray-400 text-center">Veuilez bien nous contacter au </p>
  </div>
  
- <section class=" justify-between text-3xl pt-[40px] pl-[50%] bg-red-100">
+ <section class=" justify-between text-3xl pt-[40px] max-md:pl-[30px] pl-[50%] bg-red-100">
   <div class=" flex">
  <div>
   <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -46,7 +56,7 @@
   <path fill-rule="evenodd" d="M18.0299 8.98132c0 .55229-.4477 1-1 .99999l-3.03-.00002c-.5522 0-1-.44772-1-1V5.99995c0-.55229.4478-1 1-1 .5523 0 1 .44771 1 1v.58112l3.3184-3.29111c.3921-.38892 1.0253-.38631 1.4142.00582.3889.39213.3863 1.02529-.0058 1.4142l-3.2984 3.27133h.6016c.5523.00001 1 .44773 1 1.00001Z" clip-rule="evenodd"/>
 </svg>
 </div>
-<div>
+<div >
   <p class="text-2xl">+237 658058142</p>
   <p class="text-2xl">+237 683031209</p>
   
@@ -75,56 +85,57 @@
 
 
 
-  <footer class="birthstone-regular pb-[30px]  border-x-4 border-yellow-200 border-b-2 bg-gray-200 pl-[50px] text-xl">
+  <footer class="birthstone-regular pb-[30px]  max-md:w-[360px] max-md:block max-md:flex-wrap
+   border-x-4 border-yellow-200 border-b-2 bg-gray-200 pl-[50px] text-xl">
       <p class="cedarville-cursive-regular text-white text-center pt-[30px] ">Watch am</p>
-    <div class="flex gap-[170px] pt-[40px]">
-      <div >
+    <div class="flex gap-[170px] pt-[40px]  max-md:flex-wrap">
+      <div class=" max-md:hidden " >
         <b>Menu</b>
         <p>Outils <br> Formation <br>Contact et parrainage <br>Conseiller <br>Newsletter</p>
         <p>Qui sommes nous? <br>Mentions legales <br>Conditions generales d'utilisation</p>
       </div>
       <div>
         <b>Guides</b> <br>
-      <a href="" >Investir en bourse</a><br>
-      <a href="">Comparatif d'assurances vie</a><br>
-      <a href="">Ouvrir PEA(comparatif)</a><br>
-      <a href="">Comparatif PER</a><br>
-      <a href="">Defiscalisation</a><br>
-      <a href="">Preparer sa retraite</a><br>
-      <a href="">Gestionnaire de patrimoine</a><br>
-      <a href="">Comparatif banques en ligne</a></div>
+      <a href="" class="hover:text-orange-500">Investir en bourse</a><br>
+      <a href="" class="hover:text-orange-500">Comparatif d'assurances vie</a><br>
+      <a href="" class="hover:text-orange-500">Ouvrir PEA(comparatif)</a><br>
+      <a href="" class="hover:text-orange-500">Comparatif PER</a><br>
+      <a href="" class="hover:text-orange-500">Defiscalisation</a><br>
+      <a href="" class="hover:text-orange-500">Preparer sa retraite</a><br>
+      <a href="" class="hover:text-orange-500">Gestionnaire de patrimoine</a><br>
+      <a href="" class="hover:text-orange-500">Comparatif banques en ligne</a></div>
       
       <div>
         <b>Evenements</b><br>
-        <a href="">Anniversaire</a><br>
-        <a href="">Fiancailles</a><br>
-        <a href="">Mariage</a><br>
-        <a href="">Bapteme</a><br>
-        <a href="">Communion</a><br>
-        <a href="">Fete des peres</a><br>
-        <a href="">Fete des meres</a><br>
-        <a href="">Saint valentin</a>
+        <a href="" class="hover:text-orange-500">Anniversaire</a><br>
+        <a href="" class="hover:text-orange-500">Fiancailles</a><br>
+        <a href="" class="hover:text-orange-500">Mariage</a><br>
+        <a href="" class="hover:text-orange-500">Bapteme</a><br>
+        <a href="" class="hover:text-orange-500">Communion</a><br>
+        <a href="" class="hover:text-orange-500">Fete des peres</a><br>
+        <a href="" class="hover:text-orange-500">Fete des meres</a><br>
+        <a href="" class="hover:text-orange-500">Saint valentin</a>
 
       </div>
       <div>
         <b>HORLOGERIES</b><br>
-        <a href="">Nos boutiques</a><br>
-        <a href="">Nous contacter</a><br>
-        <a href="">CGV</a><br>
-        <a href="">Mentions speciales</a><br>
-        <a href="">Confidentialite</a>
+        <a href="" class="hover:text-orange-500">Nos boutiques</a><br>
+        <a href="" class="hover:text-orange-500">Nous contacter</a><br>
+        <a href="" class="hover:text-orange-500">CGV</a><br>
+        <a href="" class="hover:text-orange-500">Mentions speciales</a><br>
+        <a href="" class="hover:text-orange-500">Confidentialite</a>
       </div>
     </div>
   </footer>
-<section class="flex bg-white justify-between">
-  <section class="bg-white flex pl-[200px] gap-[90px] pt-[5px] ">
+<section class="flex bg-white justify-between  max-md:flex-wrap  max-md:m-0">
+  <section class="bg-white flex pl-[200px] gap-[90px] pt-[5px]  max-md:pl-[20px] max-md:block max-md:flex-wrap">
 
     <div class=" w-[300px]"> Copyright&copy2025 -All rights reserved </div>
     <div><p class="alex-brush-regular w-[150px]">Triple A Services</p>
 
    </section>  
 <section>
-      <div class= " text-black flex gap-[20px] ml-[500px] bg-white">
+      <div class= " text-black flex max-md:block max-md:flex-wrap gap-[20px] ml-[500px]  max-md:m-0 bg-white">
         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
   <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
 </svg>

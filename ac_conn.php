@@ -90,32 +90,46 @@ catch(PDOException $e){
   <title>Commandes</title>
 </head>
 <body class="birthstone-regular">
+
+    <header>
+   <div class="bg-gray-500"><p class="alex-brush-regular text-center text-white ">Triple A Services</p></div>
+
+
+  <section class="text-white text-xl bg-gray-200 max-md:pr-[100px] flex justify-between ">
+    <section>
+      <div> <p class="cedarville-cursive-regular ml-[50px] pt-[5px] max-md:text-[22px] max-md:ml-[10px] text-black">Watch am</p></div>
+ </section>
+    <div>
+      <ul class="flex gap-[30px] max-md:pl-[20px]  pt-[10px] pr-[20px] max-md:block max-md:text-[18px]">
+
+       <li><a href="./index.php" class="hover:underline hover:text-gray-400">Accueil</a></li> 
+         <li><a href="./produits.php" class="hover:underline hover:text-gray-400">Nos produits</a></li> 
+         <li><a href="./ac_conn.php" class="hover:underline hover:text-gray-400">My account</a></li> 
+         <li><a href="./contact.php" class="hover:underline hover:text-gray-400">Contact Us</a></li> 
+         <li><a href="./deconnexion.php" class="hover:underline hover:text-gray-400">Deconnexion</a></li> 
+               <svg class="w-9 h-9 text-gray-800 dark:text-white mt-[5px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z"/>
+</svg>
+
+
+      </ul>
+    </div> 
+  </section>
  
- <div class=" alex-brush-regular  bg-gray-500 text-center text-white">  <p class=" ">Triple A Services</p> </div>
-
-    <header class=" text-xl flex justify-between h-[70px] ">
-    <nav class="   bg-gray-200 flex gap-[700px] w-[1700px]">
-    <p class=" cedarville-cursive-regular pt-[20px] pl-[50px] ">Watch am</p>
-    <nav class=" hover:text-gray-400">
-     <ul class=" text-white flex gap-[30px] text-black">
-      <li class="pt-[20px]"> <a href="index.php"class="pt-[30px]">Acceuil</a></li>
-      <li class="pt-[20px]"><a href="./pprod.php" class="">Nos Produits</a></li>
-      <li class="pt-[20px]"> <a href="./ac_conn.php" class="">My account</a></li>
-      <li class="pt-[20px]"> <a href="./contact.php" class="pr-[20px]">Contact us</a></li>
-         </nav>
- </header>
+  </header>
 
 
-  <section class="border-2 border-black mt-[70px] w-[460px] ml-[35%] birthstone-regular">
+
+  <section class="border-2 border-black mt-[70px] w-[460px] max-md:w-[345px] ml-[35%] max-md:ml-[10px] birthstone-regular">
     <div class="">
       <h2 class="text-3xl text-center birthstone-regular ">Connexion</h2>
       <form action="" method="post">
-      <input type="text" name="nom" id="" class=" border-b-2 border-black ml-[50px] pt-[40px] pb-[10px] w-[310px] text-lg birthstone-regular " placeholder="name"><ion-icon name="mail-outline"></ion-icon>
-      <input type="email" name="email" id="" class="ml-[50px] border-b-2 border-black pb-[10px] w-[310px] text-xl pt-[30px]" placeholder="Email">
-      <input type="number" name="phone" id=""  class="border-b-2 border-black pb-[10px] ml-[50px] w-[310px] text-lg pt-[30px] birthstone-regular" placeholder="telephone"> 
-      <input type="password" name="password" id=""  class=" ml-[50px] border-b-2 border-black pb-[10px] w-[310px] text-xl pt-[30px]" placeholder="Password">
+      <input type="text" name="nom" id="" class=" border-b-2 border-black ml-[50px] max-md:ml-[30px] pt-[40px] pb-[10px] w-[310px] max-md:w-[250px] text-lg birthstone-regular " placeholder="name"><ion-icon name="mail-outline"></ion-icon>
+      <input type="email" name="email" id="" class="ml-[50px] max-md:ml-[30px]  border-b-2 border-black pb-[10px] w-[310px] max-md:w-[250px] text-xl pt-[30px]" placeholder="Email">
+      <input type="number" name="phone" id=""  class="border-b-2 border-black pb-[10px] ml-[50px] max-md:ml-[30px]  w-[310px] max-md:w-[250px] text-lg pt-[30px] birthstone-regular" placeholder="telephone"> 
+      <input type="password" name="password" id=""  class=" ml-[50px] max-md:ml-[30px]  border-b-2 border-black pb-[10px] w-[310px] max-md:w-[250px] text-xl pt-[30px]" placeholder="Password">
       <a href=""  class="hover:underline text-center block pt-[20px]">Mot de passe oublie?</a>
-      <input type="submit" name="valid" value="Connexion" class="bg-blue-900 mt-[30px] ml-[50px] pt-[15px] pb-[15px] pr-[143px] pl-[143px] text-white text-lg"> 
+      <input type="submit" name="valid" value="Connexion" class="bg-blue-900 mt-[30px] ml-[50px] max-md:ml-[30px] pt-[15px] pb-[15px] pr-[143px] max-md:pr-[130px] pl-[143px] max-md:pl-[130px] max-md:w-[250px] text-white text-lg"> 
       </form>
       <i style=" color:red " class="ml-[80px] mt-[40px]">
         <?php

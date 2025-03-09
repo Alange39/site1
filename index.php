@@ -19,7 +19,7 @@ require('config/connexion.php')
  <script src="https://cdn.tailwindcss.com"></script>
   <title>Page d'accueil</title>
  </head>
- <body class="birthstone-regular max-md:w-[350px]">
+ <body class="birthstone-regular max-md:w-[400px]">
 
   <header>
    <div class="bg-gray-500"><p class="alex-brush-regular text-center text-white ">Triple A Services</p></div>
@@ -103,7 +103,7 @@ require('config/connexion.php')
       <!-- Cinquieme section -->
        <p class="alex-brush-regular text-center underline text-4xl pt-[40px] ">Nos Oeuvres</p>
 
-       <section class="text-[19px] flex gap-[50px] flex-wrap items-center pl-[50px] mt-[70px] mb-0 pb-[50px]  border-x-4 border-yellow-200">
+       <section class="text-[19px] flex gap-[50px] max-md:w-[360px] flex-wrap items-center pl-[50px] mt-[70px] mb-0 pb-[50px]  border-x-4 border-yellow-200">
         
           <div class="w-[300px]  max-md:text-[20px] max-md:w-[197px]">
             <div><img src="./assets/images/box.jpg" alt=""></div>
@@ -204,7 +204,8 @@ require('config/connexion.php')
 
          
        
-       <footer class="birthstone-regular pb-[30px] mt-[0px]  max-md:block max-md:flex-wrap border-x-4 border-yellow-200 border-b-2  bg-gray-200 pl-[50px] text-xl">
+       <footer class="birthstone-regular pb-[30px] mt-[0px] max-md:w-[360px] max-md:block max-md:flex-wrap border-x-4
+        border-yellow-200 border-b-2  bg-gray-200 pl-[50px] text-xl">
       <p class="cedarville-cursive-regular text-white text-center pt-[30px] ">Watch am</p>
     <div class="flex gap-[170px] pt-[40px] max-md:flex-wrap">
       <div  class=" max-md:hidden  max-md:text-[17px] ">

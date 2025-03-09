@@ -126,7 +126,7 @@ require('config/connexion.php')
               <p class="font-bold">174,510FCFA / piece</p>
               <p class="font-bold">1 piece (MOQ)</p>
               <button class="bg-gray-400 text-white rounded-[17px] mt-[10px] px-[32px] py-[10px] hover:border-4 hover:border-gray-300"><a href="./contact.php" class="hover:text-yellow-200">
-                Contactez us</a></button>
+                Contact us</a></button>
             </div>
           </div>
 
@@ -139,7 +139,7 @@ require('config/connexion.php')
               <p class="font-bold">220,0FCFA-276,06CFA / piece</p>
               <p class="font-bold">2 pieceS (MOQ)</p>
               <button class="bg-black text-white rounded-[17px] mt-[10px] px-[32px] py-[10px] hover:border-4 hover:border-gray-300"><a href="./contact.php" class="hover:text-yellow-200">
-                Contactez us</a></button>
+                Contact us</a></button>
             </div>
           </div>
 
@@ -158,7 +158,7 @@ require('config/connexion.php')
 
 
           <div class="w-[300px]  ml-[100px] max-md:ml-0 max-md:text-[20px] max-md:w-[197px]">
-            <div><img src="./assets/images/box4.jpg" alt=""></div>
+            <div><img src="./assets/images/box4.jpg" alt="" class="h-[260px] w-[240px]"></div>
             <div class="w-[180px] flex-wrap">
               <span class="bg-black text-white text-[17px] opacity-100 rounded-full py-[4px] px-[10px]">1/6</span>
               <p class="flex-wrap">Montre automatique luxieuse pour Hommes au Design cool </p>
@@ -171,7 +171,7 @@ require('config/connexion.php')
 
 
           <div class="w-[300px]  max-md:text-[20px] max-md:w-[197px]">
-            <div><img src="./assets/images/téléchargement (2).jpeg" alt=""></div>
+            <div><img src="./assets/images/téléchargement (2).jpeg" alt="" class="h-[260px] w-[240px]"></div>
             <div class="w-[180px] flex-wrap">
               <span class="bg-black text-white text-[17px] opacity-100 rounded-full py-[4px] px-[10px]">1/6</span>
               <p class="flex-wrap">Montre automatique luxieuse pour Hommes</p>
@@ -185,7 +185,7 @@ require('config/connexion.php')
 
 
           <div class="w-[300px]  max-md:text-[20px] max-md:w-[210px]">
-            <div><img src="./assets/images/orient_1.webp" alt=""></div>
+            <div><img src="./assets/images/orient_1.webp" alt="" class="h-[260px] w-[240px]"></div>
             <div class="w-[180px] flex-wrap">
               <span class="bg-black text-white text-[17px] opacity-100 rounded-full py-[4px] px-[10px]">1/6</span>
               <p class="flex-wrap">Montre automatique en acier lumineux pour Hommes</p>

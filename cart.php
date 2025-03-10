@@ -28,7 +28,6 @@ require("config/connexion.php");
 <body class="cart bg-[url('assets/images/box3.jpg')] birthstone-regular ">
 
 <header>
-  <div class=" bg-gray-500 text-center text-white  ">  <p class="pinyon-script-regular  text-lg">Triple A Services</p> </div>
 </header>
 
 
@@ -37,23 +36,23 @@ require("config/connexion.php");
 <div class="text-white text-6xl pt-[30px] text-center"><p>Hi Dear user,</p>
 <p>Bienvenue dans votre panier!</p></div>
 
-<div class=" overflow-x-auto shadow-md sm:rounded-lg  mt-[100px] w-[950px] items-center ml-[320px]">
-    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead class="text-xl text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+<div class=" overflow-x-auto shadow-md sm:rounded-lg mt-[100px] w-screen w-[950px] items-center ml-[320px] max-md:ml-[0px]">
+    <table class="w-full text-sm text-left max-md:text-[10px]  rtl:text-right text-gray-500 dark:text-gray-400 ">
+        <thead class="text-xl text-gray-700 max-md:text-[10px] max-md:w-[0px] uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="px-16 py-3">
+                <th scope="col" class="px-16 py-3 max-md:w-[10px]">
                     <span class="sr-only">Images</span>
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3 ">
                     Descriptions
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3 ">
                     Quantites
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3 ">
                     Prix
                 </th>
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-6 py-3 ">
                     Action
                 </th>
             </tr>

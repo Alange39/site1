@@ -13,6 +13,7 @@ require("./config/connexion.php");
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alex+Brush&family=Cedarville+Cursive&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/sty_ad.css">
  <script src="https://cdn.tailwindcss.com"></script>
   <title>Admin page</title>
@@ -23,7 +24,7 @@ require("./config/connexion.php");
   </style>
 </head>
 <body class="birthstone-regular">
-  <div class=" alex-brush-regular  bg-gray-500 text-center text-white">  <p class=" ">Triple A Services</p> </div>
+<div class=" alex-brush-regular  bg-gray-500 text-center text-white">  <p class=" ">Triple A Services</p> </div>
    <header class=" h-[70px] pl-[50px] pt-[10px] bg-gray-300 flex gap-[700px]">
     <div> <p class="cedarville-cursive-regular pt-[5px]">Watch am</p></div>
     <div class="">
@@ -76,7 +77,7 @@ require("./config/connexion.php");
   </ul>
 </div>
 <section class=" text-black  text-center text-6xl ">
-  <p class="alex-brush-regular mt-[130px] ml-[100px]">WELCOME, DEAR ADMINISTRATOR <br> IN THE ADMIN PAGE</p>
+  <p class=" mt-[130px] ml-[100px]">WELCOME, DEAR ADMINISTRATOR <br> IN THE ADMIN PAGE</p>
 </section>
 
 

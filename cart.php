@@ -34,13 +34,13 @@ require("config/connexion.php");
 <button class="bg-blue-400 text-white rounded-[10px] mt-[30px] ml-[20px] pl-[30px]  pt-[17px]  pb-[17px] pr-[30px] hover:text-yellow-400"><a href="index.php" class="">Accueil</a></button>
 
 <div class="text-white text-6xl pt-[30px] text-center"><p>Hi Dear user,</p>
-<p>Bienvenue dans votre panier!</p></div>
+<p>Bienvenue dans votre panier!</p></div> 
 
 <div class=" overflow-x-auto shadow-md sm:rounded-lg mt-[100px] w-screen w-[950px] items-center ml-[320px] max-md:ml-[0px]">
     <table class="w-full text-sm text-left max-md:text-[10px]  rtl:text-right text-gray-500 dark:text-gray-400 ">
         <thead class="text-xl text-gray-700 max-md:text-[10px] max-md:w-[0px] uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="px-16 py-3 max-md:w-[10px]">
+                <th scope="col" class="px-16 py-3 ">
                     <span class="sr-only">Images</span>
                 </th>
                 <th scope="col" class="px-6 py-3 ">

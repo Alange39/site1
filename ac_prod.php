@@ -1,26 +1,33 @@
 <?php
-require("config/connexion.php");
+require('./config/connexion.php');
 
 
 if(isset($_POST["valid"])){
-  $categ = $_POST["categorie"];
-
     
-
-  if(!empty($_POST["categorie"]) ){
-  
+  if(empty($_POST["categ"]) || empty( $_POST["img"]) || empty($_POST["desc"]) || empty($_POST["PU"]) || empty($_POST["qte"])){
+  $sms="Veuillez remplir tous les champs";
 }else{
- $sms="Veuillez remplir tous les champs";
+
 }
   
 
 
   try{
-  $categ = $_POST["categorie"];
+   $categ = $_POST["categ"];
+  $img = $_POST["img"];
+  $desc = $_POST["desc"];
+  $PU = $_POST["PU"];
+  $qte = $_POST["qte"];
+
   
  
-  $stmt=$conn->prepare("INSERT INTO categories(noms)  VALUES(:noms)");
-  $stmt->bindparam(":noms", $categ);
+  $stmt=$conn->prepare("INSERT INTO produits(categories, images, descriptions, quantites, prix) 
+   VALUES(:categ, :img, :desc :qte :prix)");
+  $stmt->bindparam(":categ", $categ);
+  $stmt->bindparam(":img", $img);
+  $stmt->bindparam(":desc", $desc);
+  $stmt->bindparam(":qte", $qte);
+  $stmt->bindparam(":prix", $prix);
   $stmt->execute();
 
   $msg="La produit a ete ajoutee";
@@ -43,16 +50,17 @@ echo"Une erreur est survenue".$e->getMessage();
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alex+Brush&family=Cedarville+Cursive&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/sty_ad.css">
  <script src="https://cdn.tailwindcss.com"></script>
   <title>Product action</title>
 </head>
 <body class=" birthstone-regular ">
   <div class=" alex-brush-regular  bg-gray-500 text-center text-white">  <p class=" ">Triple A Services</p> </div>
-   <header class=" h-[70px] pl-[50px] pt-[10px] bg-gray-300 flex gap-[700px]">
-    <div><p class="text-white cedar-cursive-regular">Watch am</p></div>
+   <header class=" h-[70px] pl-[50px] pt-[10px] bg-gray-300 flex justify-between">
+    <div><p class="text-white cedarville-cursive-regular">Watch am</p></div>
     <div class="">
-       <ul class=" flex gap-[50px] text-xl text-white">
+       <ul class=" flex gap-[50px] text-xl text-white pr-[20px]">
       <li>
         <a href="./ac_categ.php" class="">Ajouter un produit?</a>
  <a href=""class="hover:text-gray-400">Acceuil</a></li>
@@ -103,17 +111,21 @@ echo"Une erreur est survenue".$e->getMessage();
 </div>
 
 <div>
-  <h1 class="text-black  text-center text-5xl ">WELCOME, DEAR ADMINISTRATOR IN THE <br>ADDING CATEGORIES PAGE</h1></div>
+  <h1 class="text-black  text-center text-5xl ">WELCOME, DEAR ADMINISTRATOR IN THE <br>ADDING PRODUCTS PAGE</h1></div>
 
 
       <section class="border-2 border-black mt-[70px] w-[460px] ml-[35%] birthstone-regular">
     <div class="">
-      <h2 class="text-2xl text-center birthstone-regular ">Adding Categories</h2>
+      <h2 class="text-3xl text-center pt-[20px] birthstone-regular ">Adding products</h2>
       <form action="" method="post">
-      <input type="text" name="categorie" id="" class=" border-b-2 border-black ml-[50px] pt-[40px] pb-[10px] w-[280px] text-lg birthstone-regular " placeholder="Nom categorie">
-      <input type="submit" name="valid" value=" Add category" class="bg-blue-900 mt-[30px] ml-[50px] pt-[15px] pb-[15px] pr-[143px] pl-[143px] text-white text-lg"> 
+      <input type="text" name="categ" id="" class=" border-b-2 border-black ml-[50px] pt-[40px] pb-[10px] w-[350px] text-lg birthstone-regular " placeholder="Nom categorie">
+       <input type="text" name="desc" id="" class=" border-b-2 border-black ml-[50px] pt-[40px] pb-[10px] w-[350px] text-lg birthstone-regular " placeholder="description">
+        <input type="text" name="qte" id="" class=" border-b-2 border-black ml-[50px] pt-[40px] pb-[10px] w-[350px] text-lg birthstone-regular " placeholder="Quantite">
+         <input type="number" name="PU" id="" class=" border-b-2 border-black ml-[50px] pt-[40px] pb-[10px] w-[350px] text-lg birthstone-regular " placeholder="Prix Unitaire">
+          <input type="file" name="img" id="" class=" border-b-2 border-black ml-[50px] pt-[40px] pb-[10px] w-[350px] text-lg birthstone-regular " placeholder="images">
+      <input type="submit" name="valid" value=" Add product" class="bg-blue-900 mt-[30px] ml-[50px] pt-[15px] pb-[15px] pr-[143px] pl-[143px] text-white text-lg"> 
       </form>  
-      <i style=" color:red " class="ml-[80px] mt-[40px]">
+      <i style=" color:red " class="ml-[80px] text-2xl mt-[40px]">
         <?php
         if(isset($sms)){
           echo $sms;

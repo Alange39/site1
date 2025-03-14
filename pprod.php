@@ -52,9 +52,9 @@ require("./config/connexion.php");
  <p class="text-center text-orange-900 text-2xl  underline pt-[40px] pb-[40px] hover:text-gray-400">
   Montres Bracelets de luxe pour hommes
  </p>
-<section></section>
+
 <!-- premiere montre -->
-<section class="max-md:flex-wrap flex gap-[10px] w-[2000px] pl-[20px]">
+<section class=" flex gap-[10px] max-md:flex-wrap w-screen pl-[20px]">
    <div class="" >
   <div  class="text-center text-lg">
   <div class="">
@@ -68,7 +68,8 @@ require("./config/connexion.php");
                   <a href="./cart.php">Ajouter au panier</a></button>
     </div>
   </div>
- 
+  </div>
+
   <!-- Deuxieme montre -->
   <div  class="text-center text-lg">
 
@@ -201,7 +202,7 @@ require("./config/connexion.php");
 
 
 
-<section  class="pt-[30px] flex pl-[20px] gap-[20px] flex-wrap">
+<section  class="pt-[30px] flex pl-[20px] w-screen mt-[50px] gap-[20px] flex-wrap">
 <?php
      try{
                   $hom = 'Montres Bracelets de luxe pour hommes';
@@ -246,68 +247,71 @@ require("./config/connexion.php");
 
 </section>
 
-<section>
+<section class="w-screen">
    <div><p class="pt-[110px] pb-[30px] text-center text-blue-900 underline text-4xl">Nos partenaires</p></div>
-   <div>
-      <img src="./assets/images/Watch-Shop.jpg" alt="" class=" w-[2000px]">
-      <img src="./assets/images/Bijourama.jpg" alt="" class=" pt-[70px] w-[2000px]">
-      <div class="flex pt-[70px]">
-         <img src="./assets/images/Chic-Time.jpg" alt="" class="w-[750px]">
+   <div class="w-screen">
+      <img src="./assets/images/Watch-Shop.jpg" alt="" class="w-screen ">
+      <img src="./assets/images/Bijourama.jpg" alt="" class=" pt-[70px] w-screen">
+      <div class="flex max-md:block pt-[70px] w-screen">
+         <img src="./assets/images/Chic-Time.jpg" alt="" class="w-[764px]">
          <img src="./assets/images/piaget.jpg" alt="" class="w-[750px] ">
 
       </div>
    </div>
 </section>
+  
 
-  <footer class="birthstone-regular pb-[30px] mt-[80px]  border-x-4 border-yellow-200 border-b-2 w-[2000px] bg-gray-200 pl-[50px] text-xl">
+      
+       <footer class="birthstone-regular pb-[30px] mt-[0px] max-md:w-[360px] max-md:block max-md:flex-wrap border-x-4
+        border-yellow-200 border-b-2  bg-gray-200 pl-[50px] text-xl">
       <p class="cedarville-cursive-regular text-white text-center pt-[30px] ">Watch am</p>
-    <div class="flex gap-[170px] pt-[40px]">
-      <div >
+    <div class="flex gap-[170px] pt-[40px] max-md:flex-wrap">
+      <div  class=" max-md:hidden  max-md:text-[17px] ">
         <b>Menu</b>
         <p>Outils <br> Formation <br>Contact et parrainage <br>Conseiller <br>Newsletter</p>
         <p>Qui sommes nous? <br>Mentions legales <br>Conditions generales d'utilisation</p>
       </div>
       <div>
         <b>Guides</b> <br>
-      <a href="" >Investir en bourse</a><br>
-      <a href="">Comparatif d'assurances vie</a><br>
-      <a href="">Ouvrir PEA(comparatif)</a><br>
-      <a href="">Comparatif PER</a><br>
-      <a href="">Defiscalisation</a><br>
-      <a href="">Preparer sa retraite</a><br>
-      <a href="">Gestionnaire de patrimoine</a><br>
-      <a href="">Comparatif banques en ligne</a></div>
+      <a href="" class="hover:text-orange-500" >Investir en bourse</a><br>
+      <a href="" class="hover:text-orange-500" >Comparatif d'assurances vie</a><br>
+      <a href="" class="hover:text-orange-500" >Ouvrir PEA(comparatif)</a><br>
+      <a href="" class="hover:text-orange-500" >Comparatif PER</a><br>
+      <a href="" class="hover:text-orange-500" >Defiscalisation</a><br>
+      <a href="" class="hover:text-orange-500" >Preparer sa retraite</a><br>
+      <a href="" class="hover:text-orange-500" >Gestionnaire de patrimoine</a><br>
+      <a href="" class="hover:text-orange-500" >Comparatif banques en ligne</a></div>
       
       <div>
         <b>Evenements</b><br>
-        <a href="">Anniversaire</a><br>
-        <a href="">Fiancailles</a><br>
-        <a href="">Mariage</a><br>
-        <a href="">Bapteme</a><br>
-        <a href="">Communion</a><br>
-        <a href="">Fete des peres</a><br>
-        <a href="">Fete des meres</a><br>
-        <a href="">Saint valentin</a>
+        <a href="" class="hover:text-orange-500" >Anniversaire</a><br>
+        <a href="" class="hover:text-orange-500" >Fiancailles</a><br>
+        <a href="" class="hover:text-orange-500" >Mariage</a><br>
+        <a href="" class="hover:text-orange-500" >Bapteme</a><br>
+        <a href="" class="hover:text-orange-500" >Communion</a><br>
+        <a href="" class="hover:text-orange-500" >Fete des peres</a><br>
+        <a href="" class="hover:text-orange-500" >Fete des meres</a><br>
+        <a href="" class="hover:text-orange-500" >Saint valentin</a>
 
       </div>
       <div>
-        <b>HORLOGERIES</b><br>
-        <a href="">Nos boutiques</a><br>
-        <a href="">Nous contacter</a><br>
-        <a href="">CGV</a><br>
-        <a href="">Mentions speciales</a><br>
-        <a href="">Confidentialite</a>
+        <b>HORLOGERIES</b><br> 
+        <a href="" class="hover:text-orange-500" >Nos boutiques</a><br>
+        <a href="" class="hover:text-orange-500" >Nous contacter</a><br>
+        <a href="" class="hover:text-orange-500" >CGV</a><br>
+        <a href="" class="hover:text-orange-500" >Mentions speciales</a><br>
+        <a href="" class="hover:text-orange-500" >Confidentialite</a>
       </div>
     </div>
   </footer>
-<section class="flex bg-white justify-between">
-  <section class="bg-white flex pl-[200px] gap-[90px] pt-[5px] ">
+<section class="flex bg-white justify-between max-md:flex-wrap  max-md:m-0" >
+  <section class="bg-white flex pl-[200px]  max-md:pl-[20px] gap-[90px] pt-[5px] max-md:block max-md:flex-wrap ">
 
-    <div class=" w-[300px]"> Copyright&copy2025 -All rights reserved </div>
+    <div class=" w-[400px]"> Copyright&copy2025 -All rights reserved </div>
     <div><p class="alex-brush-regular w-[150px]">Triple A Services</p>
 
    </section>  
-<section>
+<section class="max-md:hidden ">
       <div class= " text-black flex gap-[20px] ml-[500px] bg-white">
         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
   <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>

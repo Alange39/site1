@@ -7,7 +7,7 @@ $qte = $_POST["qte"];
 $prix = $_POST["prix"];
 $descrip = $_POST["desc"];
 $categ = $_POST["categ"];
-$img = $_FILES["file"]["name"];
+$img = $_FILES["img"]["name"];
 
 //insertion
 $stmt = $conn->prepare("INSERT INTO produits(categories, prix, descrip, images) VALUES(:noms, :prix, :descrip, :files)");

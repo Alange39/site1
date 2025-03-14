@@ -1,6 +1,41 @@
 <?php
-require("./connexion.php");
+require("connexion.php");
+
+
+if(isset($_POST["valid"])){
+    
+  if(empty($_POST["categ"]) || empty( $_FILES["img"]["name"]) || empty($_POST["desc"]) || empty($_POST["PU"]) || empty($_POST["qte"])){
+  $sms="Veuillez remplir tous les champs";
+  }  else{
+
+  try{
+   $categ = $_POST["categ"];
+  $img = $_FILES["img"]["name"];
+  $desc = $_POST["desc"];
+  $PU = $_POST["PU"];
+  $qte = $_POST["qte"];
+
+  
+ 
+  $stmt=$conn->prepare("INSERT INTO produits (categories, images, descriptions, quantites, prix) 
+   VALUES (:categ , :img , :descs , :qte , :prix) ");
+  $stmt->bindparam(":categ", $categ);
+  $stmt->bindparam(":img", $img);
+  $stmt->bindparam(":descs", $desc);
+  $stmt->bindparam(":qte", $qte);
+  $stmt->bindparam(":prix", $PU);
+  $stmt->execute();
+
+
+  $msg="La produit a ete ajoutee";
+   
+}catch(PDOException $e){
+echo "Une erreur est survenue".$e->getMessage();
+}
+  }
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -88,8 +123,8 @@ require("./connexion.php");
     
       <div class="">
       <h2 class="text-2xl text-center birthstone-regular ">Adding Products</h2>
-      <form action="./add.php" method="post" enctype="multipart/form-data">
-      <input type="text" name="desc" id="" class=" border-b-2 border-black ml-[50px] pt-[40px] pb-[10px] w-[280px] text-lg birthstone-regular " placeholder="Description">
+      <form action="" method="post" enctype="multipart/form-data">
+      <input type="text" name="desc" id="" class=" border-b-2 border-black ml-[50px] pt-[40px] pb-[10px] w-[370px] text-lg birthstone-regular " placeholder="Description">
       <input type="number" name="qte" id="" class="ml-[50px] border-b-2 border-black pb-[10px] w-[370px] text-xl pt-[30px]" placeholder="Quantite">
       <select id="cars" name="categ" placeholder="categories" class="ml-[50px] border-b-2 border-black pb-[10px] w-[370px] text-xl pt-[30px]">
   <option >categories</option>
@@ -98,11 +133,11 @@ require("./connexion.php");
   <option value="Montres Bracelets de luxe  pour Couples">Montres Bracelets de luxe  pour Couples</option>
   <option value="Montres Bracelets de luxe  personnalisees">Montres Bracelets de luxe  personnalisees</option>
 </select>
-      <input type="number" name="prix" id=""  class="border-b-2 border-black pb-[10px] ml-[50px] w-[280px] text-lg pt-[30px] birthstone-regular" placeholder="prix en $"> 
-      <input type="file" name="file" id=""  class="ml-[50px] border-b-2 border-black pb-[10px] w-[370px] text-xl pt-[30px]" placeholder="image">
+      <input type="number" name="PU" id=""  class="border-b-2 border-black pb-[10px] ml-[50px] w-[370px] text-lg pt-[30px] birthstone-regular" placeholder="prix en $"> 
+      <input type="file" name="img" id=""  class="ml-[50px] border-b-2 border-black pb-[10px] w-[370px] text-xl pt-[30px]" placeholder="image">
       <input type="submit" name="valid" value=" Add product" class="bg-blue-900 mt-[30px] ml-[50px] pt-[15px] pb-[15px] pr-[143px] pl-[143px] text-white text-lg"> 
       </form>  
-      <i style=" color:red " class="ml-[80px] mt-[40px]">
+      <i style=" color:red " class="ml-[80px] text-2xl mt-[40px]">
         <?php
         if(isset($sms)){
           echo $sms;

@@ -27,7 +27,7 @@ if(!empty($_POST["email"]) && !empty($_POST["pw"]) && !empty($_POST["nom"]) && !
   $stmt->bindparam(":email", $email);
   $stmt->bindparam(":pw", $pw);
   $stmt->bindparam(":tel", $tel);
-    $stmt->bindparam(":Ad", $Ad);
+  $stmt->bindparam(":Ad", $Ad);
   $stmt->execute();
 
   $msg="Vous avez ete inscrit";
